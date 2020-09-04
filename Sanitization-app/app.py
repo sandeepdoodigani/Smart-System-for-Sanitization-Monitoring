@@ -12,9 +12,13 @@ import boto3
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/hello')
 def hello():
     return "Hello world"
+
+@app.route('/world')
+def world():
+    return "Hello world"    
 
 @app.route('/')
 def index():
