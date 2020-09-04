@@ -7,9 +7,14 @@ Created on Mon Aug 31 21:12:47 2020
 
 from flask import Flask, render_template
 import requests
+
 import boto3
 
 app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hello world"
 
 @app.route('/')
 def index():
