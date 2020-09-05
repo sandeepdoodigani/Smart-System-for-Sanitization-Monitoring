@@ -24,6 +24,10 @@ def hi():
 def world():
     return "Hello world"    
 
+@app.route('/world2')
+def world2():
+    return "Hello world"       
+
 @app.route('/')
 def index():
     names = ['nidhi','sandeep','pradeepthi','Prasad']
